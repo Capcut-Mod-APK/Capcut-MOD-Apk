@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Button</title>
     <style>
+        /* Styling for the container */
+        .container {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        /* Make image responsive */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Styling for the download button */
         .download-btn {
             display: inline-block;
             padding: 20px 40px;
@@ -15,18 +30,34 @@
             text-decoration: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 20px;
         }
+
         .download-btn:hover {
             background-color: #45a049; /* Darker green on hover */
+        }
+
+        /* Make the button and image responsive for mobile */
+        @media (max-width: 600px) {
+            .download-btn {
+                width: 100%;
+                padding: 15px 0;
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
 
-<a href="path_to_your_file.zip" download="file_name.zip" class="download-btn">
-    Download Now
-</a>
+<div class="container">
+    <!-- Add image above the button -->
+    <img src="your_image_url.jpg" alt="Download Image">
+    
+    <!-- Download button -->
+    <a href="path_to_your_file.zip" download="file_name.zip" class="download-btn">
+        Download Now
+    </a>
+</div>
 
 </body>
 </html>
-
